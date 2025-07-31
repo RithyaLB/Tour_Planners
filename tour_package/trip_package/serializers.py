@@ -30,3 +30,8 @@ class PackageCity_Serializer(serializers.ModelSerializer):
     class Meta:
         model = PackageCity
         fields = '__all__'
+
+class TripPackageUsers_Serializer(serializers.ModelSerializer):
+    class Meta:
+        model = TripPackageUsers
+        exclude = ['password_hash']

@@ -1,5 +1,6 @@
 asgiref==3.9.1
 Django==5.0.14
+django-cors-headers==4.7.0
 djangorestframework==3.16.0
 mssql-django==1.5
 pyodbc==5.2.0
