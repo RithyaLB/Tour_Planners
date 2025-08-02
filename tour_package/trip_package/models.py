@@ -93,6 +93,7 @@ class TripPackagePassengers(models.Model):
 class BookingTickets(models.Model):
     ticket_id = models.AutoField(primary_key=True, db_column='ticket_id')
     booking = models.ForeignKey(TripPackageBookings, on_delete=models.CASCADE, db_column='booking')
+    flight_booking_id = models.IntegerField(blank=True, null=True, db_column='flight_booking_id')
 
     def _str_(self):
         return f"Ticket {self.ticket_id} for Booking {self.booking.booking_id}"
