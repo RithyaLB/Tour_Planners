@@ -138,7 +138,7 @@ def external_start_flight(budget,start_date,starting_place,head_count):
                         "seats_required" : head_count,
                         "limit": 5
                     }
-                    flight_options = call_flight_service(start,"http://192.168.220.24:3000/flights/search")
+                    flight_options = call_flight_service(start,"http://192.168.220.24:8080/flights/search")
                     '''flight_options = [
                                 {
                                     "total_duration_minutes": 340,
@@ -253,7 +253,7 @@ def internal_flight(matching_package,budget,head_count,start_date):
                 "seats_required": head_count,
                 "limit": 1,
             }
-            flights = call_flight_service(city_dict,"http://192.168.220.24:3000/flights/internal-search")
+            flights = call_flight_service(city_dict,"http://192.168.220.24:8080/flights/internal-search")
             '''flights = [
                     {
                         "flight_id": "FL123",
@@ -306,7 +306,7 @@ def external_end_flight(matching_package,budget,starting_place,head_count):
             "seats_required" : head_count,
             "limit": 5,
         }
-        flight_options = call_flight_service(send,"http://192.168.220.24:3000/flights/search")
+        flight_options = call_flight_service(send,"http://192.168.220.24:8080/flights/search")
         '''flight_options = [
                                 {
                                     "total_duration_minutes": 340,
@@ -442,13 +442,13 @@ def start_flight_options(request):
         for pc in package_cities:
             if starting_place != pc.city.city_name:
                 start = {
-                    "travel_date": start_date.strftime("%Y-%m-%d %H:%M"),
+                    "travel_datetime": start_date.strftime("%Y-%m-%dT%H:%M:%S"),
                     "source_city": starting_place,
                     "destination_city": pc.city.city_name,
                     "seats_required": head_count,
                     "limit": 5
                 }
-                flight_options = call_flight_service(start,"http://192.168.220.24:3000/flights/search")
+                flight_options = call_flight_service(start,"http://192.168.220.24:8080/flights/search")
                 '''flight_options = [
                                 {
                                     "total_duration_minutes": 340,
@@ -526,7 +526,7 @@ def generate_flight_plan(request):
 
         if not all([head_count, package_id, arrival_str, source]):
             return Response({"error": "Missing required fields"}, status=status.HTTP_400_BAD_REQUEST)
-        arrival_dt = datetime.strptime(arrival_str, "%Y-%m-%d %H:%M")
+        arrival_dt = datetime.strptime(arrival_str, "%Y-%m-%dT%H:%M")
         current_date = (arrival_dt + timedelta(days=1)).replace(hour=0, minute=0, second=0, microsecond=0)
         package_cities = list(PackageCity.objects.filter(package__package_id=package_id).order_by('sequence'))
         if not package_cities or len(package_cities) < 1:
@@ -548,13 +548,13 @@ def generate_flight_plan(request):
             target_date = current_date + timedelta(days=day_no)
             last_spot_end_time = datetime.combine(target_date, timing) + timedelta(hours=duration_hours)
             city_dict = {
-                "travel_date": last_spot_end_time.strftime("%Y-%m-%d %H:%M"),
+                "travel_datetime": last_spot_end_time.strftime("%Y-%m-%dT%H:%M:%S"),
                 "source_city": current_pc.city.city_name,
                 "destination_city": next_pc.city.city_name,
                 "seats_required": head_count,
                 "limit": 1
             }
-            flights = call_flight_service(city_dict,"http://192.168.220.24:3000/flights/internal-search")
+            flights = call_flight_service(city_dict,"http://192.168.220.24:8080/flights/internal-search")
             '''flights = [
                 {
                     "flight_id": "FL123",
@@ -645,13 +645,13 @@ def end_flight_options(request):
         except Spot.DoesNotExist:
             return Response({"error": "Spot not found"}, status=status.HTTP_404_NOT_FOUND)
         city_dict = {
-            "travel_date": end_datetime.strftime("%Y-%m-%d %H:%M"),
+            "travel_datetime": end_datetime.strftime("%Y-%m-%dT%H:%M:%S"),
             "source_city": source_city_name,
             "destination_city": destination,
             "seats_required": head_count,
             "limit": 5
         }
-        flight_options = call_flight_service(city_dict,"http://192.168.220.24:3000/flights/search")
+        flight_options = call_flight_service(city_dict,"http://192.168.220.24:8080/flights/search")
         '''flight_options = [
                                 {
                                     "total_duration_minutes": 340,
@@ -756,12 +756,13 @@ def create_booking(request):
                 "seats_required": head_count,
                 "passenger_details": passengers
             }
-            flight_response = {
+            flight_response = call_flight_service(flight_request,"http://192.168.220.24:8080/flights/book")
+            '''flight_response = {
                 "booking_id": 2,
                 "status": "confirmed",
                 "total_price": 9000.0,
                 "message": "Successfully booked 2 seats"
-                }
+                }'''
             BookingTickets.objects.create(
                     booking=booking,
                     flight_booking_id=flight_response.get("booking_id")
