@@ -6,6 +6,12 @@ from .serializers import *
 from datetime import datetime,timedelta
 from django.forms.models import model_to_dict
 from django.contrib.auth.hashers import make_password, check_password
+import requests
+
+def call_flight_service(content, api_url):
+    response = requests.post(api_url, json=content)
+    response.raise_for_status()  
+    return list(response.json())
 
 @api_view(['POST'])
 def register_user(request):
@@ -126,13 +132,14 @@ def external_start_flight(budget,start_date,starting_place,head_count):
             for pc in package_cities:
                 if starting_place != pc.city.city_name:
                     start = {
-                        "start_date": start_date.strftime("%Y-%m-%d %H:%M"),
-                        "source": starting_place,
-                        "destination": pc.city.city_name,
-                        "head_count" : head_count,
+                        "travel_datetime": start_date.strftime("%Y-%m-%dT%H:%M:%S"),
+                        "source_city": starting_place,
+                        "destination_city": pc.city.city_name,
+                        "seats_required" : head_count,
                         "limit": 5
                     }
-                    flight_options = [
+                    flight_options = call_flight_service(start,"http://192.168.220.24:3000/flights/search")
+                    '''flight_options = [
                                 {
                                     "total_duration_minutes": 340,
                                     "total_price": 6100.00,
@@ -193,7 +200,7 @@ def external_start_flight(budget,start_date,starting_place,head_count):
                                     }
                                     ]
                                 }
-                                ]
+                                ]'''
                     if not flight_options:
                         continue
                     cheapest_option = min(flight_options,key=lambda f: float(f.get("total_price", float("inf"))))
@@ -205,7 +212,7 @@ def external_start_flight(budget,start_date,starting_place,head_count):
                         if flights:
                             last_flight = flights[-1]
                             arrival_time_str = last_flight.get("arrival_time")
-                            arrival_time = datetime.strptime(arrival_time_str, "%Y-%m-%d %H:%M:%S")
+                            arrival_time = datetime.strptime(arrival_time_str, "%Y-%m-%dT%H:%M:%S")
                             matching_package.append({
                                 "package_id": pc.package.package_id,
                                 "min_flight_price": total_cost,
@@ -240,14 +247,14 @@ def internal_flight(matching_package,budget,head_count,start_date):
             target_date = city_start_date + timedelta(days=day_no)
             city_end_datetime = datetime.combine(target_date, timing) + timedelta(hours=duration_hours)
             city_dict = {
-                "package_id": package_id,
-                "start_date": city_end_datetime.strftime("%Y-%m-%d %H:%M"),
-                "source": current_pc.city.city_name,
-                "destination": next_pc.city.city_name,
-                "head_count": head_count,
+                "travel_datetime": city_end_datetime.strftime("%Y-%m-%dT%H:%M:%S"),
+                "source_city": current_pc.city.city_name,
+                "destination_city": next_pc.city.city_name,
+                "seats_required": head_count,
                 "limit": 1,
             }
-            flights = [
+            flights = call_flight_service(city_dict,"http://192.168.220.24:3000/flights/internal-search")
+            '''flights = [
                     {
                         "flight_id": "FL123",
                         "airline_name": "IndiGo",
@@ -262,7 +269,7 @@ def internal_flight(matching_package,budget,head_count,start_date):
                         "base_price": 3200.00,
                         "available_seats": 12
                     }
-                    ]
+                    ]'''
             if not flights:
                 valid = False
                 break
@@ -284,7 +291,7 @@ def internal_flight(matching_package,budget,head_count,start_date):
                 final_packages.append({
                     "package_id": package_id,
                     "total_price": added_price,
-                    "finish_time": finish_time_dt.strftime("%Y-%m-%d %H:%M:%S")
+                    "finish_time": finish_time_dt.strftime("%Y-%m-%dT%H:%M:%S")
                 })
     return final_packages
 
@@ -293,13 +300,14 @@ def external_end_flight(matching_package,budget,starting_place,head_count):
     for mc in matching_package:
         package_cities = PackageCity.objects.filter(package__package_id=mc['package_id']).order_by('-sequence').first()
         send = {
-            "start_date": mc["finish_time"],
-            "source": package_cities.city.city_name,
-            "destination": starting_place,
-            "head_count" : head_count,
+            "travel_datetime": mc["finish_time"],
+            "source_city": package_cities.city.city_name,
+            "destination_city": starting_place,
+            "seats_required" : head_count,
             "limit": 5,
         }
-        flight_options = [
+        flight_options = call_flight_service(send,"http://192.168.220.24:3000/flights/search")
+        '''flight_options = [
                                 {
                                     "total_duration_minutes": 340,
                                     "total_price": 6100.00,
@@ -360,7 +368,7 @@ def external_end_flight(matching_package,budget,starting_place,head_count):
                                     }
                                     ]
                                 }
-                                ]
+                                ]'''
         if not flight_options:
             continue
         cheapest_option = min(flight_options,key=lambda f: float(f.get("total_price", float("inf"))))
@@ -506,32 +514,6 @@ def start_flight_options(request):
     except Exception as e:
         return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
 
-@api_view(['POST'])
-def flight_booking(request):
-    try:
-        passenger_details = request.data.get('passenger_details', [])
-        flights = request.data.get('flights', [])
-        head_count = request.data.get('head_count')
-        if not passenger_details or not flights or not head_count:
-            return Response({"error": "Missing required data"}, status=status.HTTP_400_BAD_REQUEST)
-        result = []
-        for flight in flights:
-            flight_id = flight.get('flight_id')
-            departure_time_str = flight.get('departure_time')
-            if not flight_id or not departure_time_str:
-                continue
-            departure_dt = datetime.strptime(departure_time_str, "%Y-%m-%d %H:%M")
-            travel_date = departure_dt.date().isoformat()
-            flight_dict = {
-                "flight_id": flight_id,
-                "travel_date": travel_date,
-                "seats_required": len(passenger_details),
-                "passenger_details": passenger_details
-            }
-            result.append(flight_dict)
-        return Response(result, status=status.HTTP_200_OK)
-    except Exception as e:
-        return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
 
 @api_view(['POST'])
 def generate_flight_plan(request):
@@ -559,7 +541,6 @@ def generate_flight_plan(request):
                 return Response({"error": f"No spots found in {current_pc.city.city_name}"}, status=status.HTTP_400_BAD_REQUEST)
 
             latest_spot = spots.first()
-            print(latest_spot)
             day_no = (latest_spot.day_no or 1) - 1
             timing = latest_spot.timing
             duration_hours = float(latest_spot.duration or 0)
@@ -582,8 +563,8 @@ def generate_flight_plan(request):
                     "source_city": "New Delhi",
                     "destination_airport": "BOM",
                     "destination_city": "Mumbai",
-                    "departure_time": "2025-07-30 08:30",
-                    "arrival_time": "2025-07-30 10:45",
+                    "departure_time": "2025-07-30 08:30:00",
+                    "arrival_time": "2025-07-30 10:45:00",
                     "duration_minutes": 135,
                     "base_price": 3200.00,
                     "available_seats": 12
@@ -593,7 +574,7 @@ def generate_flight_plan(request):
             if not flights:
                 return Response({"error": f"No flights from {current_pc.city.city_name} to {next_pc.city.city_name}"}, status=status.HTTP_400_BAD_REQUEST)
             arrival_time_str = flights[0].get("arrival_time")
-            last_arrival_time = datetime.strptime(arrival_time_str, "%Y-%m-%d %H:%M")
+            last_arrival_time = datetime.strptime(arrival_time_str, "%Y-%m-%dT%H:%M:%S")
             current_date = last_arrival_time  
             city_dict["flight"] = flights[0]
             result.append(city_dict)
@@ -602,7 +583,6 @@ def generate_flight_plan(request):
             current_pc = package_cities[i]
 
             city_spots = Spot.objects.filter(city=current_pc.city).order_by('day_no', 'timing')
-            print(list(city_spots))
             if not city_spots.exists():
                 continue
 
@@ -633,7 +613,7 @@ def generate_flight_plan(request):
             })
             if i < len(result):
                 arrival_time_str = result[i]['flight']['arrival_time']
-                last_arrival_time = datetime.strptime(arrival_time_str, "%Y-%m-%d %H:%M")
+                last_arrival_time = datetime.strptime(arrival_time_str, "%Y-%m-%dT%H:%M:%S")
                 current_date = (last_arrival_time + timedelta(days=1)).replace(hour=0, minute=0, second=0, microsecond=0)
 
         return Response({
@@ -737,3 +717,65 @@ def end_flight_options(request):
 
     except Exception as e:
         return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
+from rest_framework import status
+from .models import TripPackageBookings, TripPackagePassengers, BookingTickets, TourPackage, TripPackageUsers
+from datetime import datetime
+import requests
+
+@api_view(['POST'])
+def create_booking(request):
+    try:
+        data = request.data
+        package_id = data["package_id"]
+        user_id = data["user_id"]
+        head_count = data["head_count"]
+        total_amount = data["flight_total"]
+        passengers = data["passengers"]
+        flights = data["flights"]
+        booking_date_str = data["booking_date"]
+        booking_date = datetime.strptime(booking_date_str, "%Y-%m-%d")
+
+        package = TourPackage.objects.get(package_id=package_id)
+        user = TripPackageUsers.objects.get(user_id=user_id)
+        booking = TripPackageBookings.objects.create(
+            package=package,
+            user=user,
+            total_amount=(total_amount+package.price)*head_count,
+            status="confirmed",
+            booking_date=booking_date
+        )
+        for p in passengers:
+            TripPackagePassengers.objects.create(
+                booking=booking,
+                full_name=p["name"],
+                age=p["age"],
+                gender=p["gender"],
+                passport_number=p["passport_no"]
+            )
+        for flight in flights:
+            flight_request = {
+                "flight_id": flight["flight_id"],
+                "travel_date": flight["departure_time"].split(" ")[0],  
+                "seats_required": head_count,
+                "passenger_details": passengers
+            }
+            flight_response = {
+                "booking_id": 2,
+                "status": "confirmed",
+                "total_price": 9000.0,
+                "message": "Successfully booked 2 seats"
+                }
+            BookingTickets.objects.create(
+                    booking=booking,
+                    flight_booking_id=flight_response.get("booking_id")
+                )
+        return Response({
+            "message": "Booking and flight tickets successfully stored.",
+            "booking_id": booking.booking_id
+        }, status=200)
+
+    except Exception as e:
+        return Response({"error": str(e)}, status=400)
