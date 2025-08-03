@@ -507,7 +507,7 @@ def start_flight_options(request):
         return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
 
 @api_view(['POST'])
-def start_flight_booking(request):
+def flight_booking(request):
     try:
         passenger_details = request.data.get('passenger_details', [])
         flights = request.data.get('flights', [])

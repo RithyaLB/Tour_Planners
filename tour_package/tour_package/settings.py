@@ -81,7 +81,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'mssql',
         'NAME': 'Tour_Packages',
-        'HOST': r'RITHYA\SQLEXPRESS',
+        'HOST': r'PIKKABOO\SQLEXPRESS',
         'PORT': '',  
         'OPTIONS': {
             'driver': 'ODBC Driver 17 for SQL Server',
@@ -130,3 +130,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CORS_ALLOW_ALL_ORIGINS = True
+
