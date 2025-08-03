@@ -442,13 +442,14 @@ def start_flight_options(request):
         for pc in package_cities:
             if starting_place != pc.city.city_name:
                 start = {
-                    "start_date": start_date.strftime("%Y-%m-%d %H:%M"),
-                    "source": starting_place,
-                    "destination": pc.city.city_name,
-                    "head_count": head_count,
+                    "travel_date": start_date.strftime("%Y-%m-%d %H:%M"),
+                    "source_city": starting_place,
+                    "destination_city": pc.city.city_name,
+                    "seats_required": head_count,
                     "limit": 5
                 }
-                flight_options = [
+                flight_options = call_flight_service(start,"http://192.168.220.24:3000/flights/search")
+                '''flight_options = [
                                 {
                                     "total_duration_minutes": 340,
                                     "total_price": 6100.00,
@@ -509,7 +510,7 @@ def start_flight_options(request):
                                     }
                                     ]
                                 }
-                                ]
+                                ]'''
         return Response(flight_options, status=status.HTTP_200_OK)
     except Exception as e:
         return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
@@ -547,14 +548,14 @@ def generate_flight_plan(request):
             target_date = current_date + timedelta(days=day_no)
             last_spot_end_time = datetime.combine(target_date, timing) + timedelta(hours=duration_hours)
             city_dict = {
-                "package_id": package_id,
-                "start_date": last_spot_end_time.strftime("%Y-%m-%d %H:%M"),
-                "source": current_pc.city.city_name,
-                "destination": next_pc.city.city_name,
-                "head_count": head_count,
+                "travel_date": last_spot_end_time.strftime("%Y-%m-%d %H:%M"),
+                "source_city": current_pc.city.city_name,
+                "destination_city": next_pc.city.city_name,
+                "seats_required": head_count,
                 "limit": 1
             }
-            flights = [
+            flights = call_flight_service(city_dict,"http://192.168.220.24:3000/flights/internal-search")
+            '''flights = [
                 {
                     "flight_id": "FL123",
                     "airline_name": "IndiGo",
@@ -569,7 +570,7 @@ def generate_flight_plan(request):
                     "base_price": 3200.00,
                     "available_seats": 12
                 }
-            ]
+            ]'''
 
             if not flights:
                 return Response({"error": f"No flights from {current_pc.city.city_name} to {next_pc.city.city_name}"}, status=status.HTTP_400_BAD_REQUEST)
@@ -644,14 +645,14 @@ def end_flight_options(request):
         except Spot.DoesNotExist:
             return Response({"error": "Spot not found"}, status=status.HTTP_404_NOT_FOUND)
         city_dict = {
-            "package_id": package_id,
-            "start_date": end_datetime.strftime("%Y-%m-%d %H:%M"),
-            "source": source_city_name,
-            "destination": destination,
-            "head_count": head_count,
+            "travel_date": end_datetime.strftime("%Y-%m-%d %H:%M"),
+            "source_city": source_city_name,
+            "destination_city": destination,
+            "seats_required": head_count,
             "limit": 5
         }
-        flight_options = [
+        flight_options = call_flight_service(city_dict,"http://192.168.220.24:3000/flights/search")
+        '''flight_options = [
                                 {
                                     "total_duration_minutes": 340,
                                     "total_price": 6100.00,
@@ -712,18 +713,11 @@ def end_flight_options(request):
                                     }
                                     ]
                                 }
-                                ]
+                                ]'''
         return Response(flight_options, status=status.HTTP_200_OK)
 
     except Exception as e:
         return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
-
-from rest_framework.decorators import api_view
-from rest_framework.response import Response
-from rest_framework import status
-from .models import TripPackageBookings, TripPackagePassengers, BookingTickets, TourPackage, TripPackageUsers
-from datetime import datetime
-import requests
 
 @api_view(['POST'])
 def create_booking(request):
