@@ -81,7 +81,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'mssql',
         'NAME': 'Tour_Packages',
-        'HOST': 'RITHYA\\SQLEXPRESS',
+        'HOST': r'PIKKABOO\SQLEXPRESS',
         'PORT': '',  
         'OPTIONS': {
             'driver': 'ODBC Driver 17 for SQL Server',
