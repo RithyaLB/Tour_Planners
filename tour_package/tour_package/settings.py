@@ -1,3 +1,4 @@
+
 import os
 from pathlib import Path
 
@@ -44,7 +45,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'trip_package',
-    'corsheaders'
+    'corsheaders',
+    'django_q',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
@@ -129,4 +132,14 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+Q_CLUSTER = {
+    'name': 'StatusCluster',
+    'workers': 2,
+    'timeout': 60,
+    'retry': 120,
+    'queue_limit': 50,
+    'bulk': 10,
+    'orm': 'default'
+}
 
