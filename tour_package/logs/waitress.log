@@ -1,0 +1,1910 @@
+2025-08-05 12:52:34,387 INFO Starting Waitress server on http://127.0.0.1:8000
+2025-08-05 12:52:37,367 INFO Starting Waitress server on http://127.0.0.1:8000
+2025-08-05 12:52:42,292 INFO Starting Waitress server on http://127.0.0.1:8000
+2025-08-05 12:52:51,293 INFO Starting Waitress server on http://127.0.0.1:8000
+2025-08-05 12:53:08,261 INFO Starting Waitress server on http://127.0.0.1:8000
+2025-08-05 12:53:41,193 INFO Starting Waitress server on http://127.0.0.1:8000
+2025-08-05 12:54:46,108 INFO Starting Waitress server on http://127.0.0.1:8000
+2025-08-05 12:56:15,045 INFO Starting Waitress server on http://127.0.0.1:8000
+2025-08-05 12:56:46,409 INFO Starting Waitress server on http://127.0.0.1:8000
+2025-08-05 12:56:46,416 INFO Serving on http://127.0.0.1:8000
+2025-08-05 12:56:55,060 INFO Starting Waitress server on http://127.0.0.1:8000
+2025-08-05 12:56:55,069 INFO Serving on http://127.0.0.1:8000
+2025-08-05 12:57:11,226 WARNING Task queue depth is 1
+2025-08-05 12:57:11,230 WARNING Task queue depth is 2
+2025-08-05 12:57:11,252 WARNING Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+2025-08-05 12:57:11,253 WARNING Not Found: /static/rest_framework/css/prettify.css
+2025-08-05 12:57:11,255 WARNING Not Found: /static/rest_framework/css/default.css
+2025-08-05 12:57:11,256 WARNING Not Found: /static/rest_framework/css/bootstrap.min.css
+2025-08-05 12:57:11,261 WARNING Task queue depth is 1
+2025-08-05 12:57:11,267 WARNING Task queue depth is 1
+2025-08-05 12:57:11,268 WARNING Task queue depth is 2
+2025-08-05 12:57:11,279 WARNING Not Found: /static/rest_framework/js/jquery-3.7.1.min.js
+2025-08-05 12:57:11,280 WARNING Not Found: /static/rest_framework/js/ajax-form.js
+2025-08-05 12:57:11,282 WARNING Task queue depth is 2
+2025-08-05 12:57:11,282 WARNING Not Found: /static/rest_framework/js/csrf.js
+2025-08-05 12:57:11,288 WARNING Not Found: /static/rest_framework/js/bootstrap.min.js
+2025-08-05 12:57:11,298 WARNING Not Found: /static/rest_framework/js/prettify-min.js
+2025-08-05 12:57:11,300 WARNING Not Found: /static/rest_framework/js/load-ajax-form.js
+2025-08-05 12:57:11,302 WARNING Not Found: /static/rest_framework/js/default.js
+2025-08-05 19:04:25,063 ERROR Invalid HTTP_HOST header: '172.20.10.4'. You may need to add '172.20.10.4' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\http\request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '172.20.10.4'. You may need to add '172.20.10.4' to ALLOWED_HOSTS.
+2025-08-05 19:04:25,176 WARNING Bad Request: /trip_package/get_user_details
+2025-08-05 19:15:15,367 INFO Starting Waitress server on http://127.0.0.1:8000
+2025-08-05 19:15:15,380 INFO Serving on http://127.0.0.1:8000
+2025-08-05 19:16:08,561 ERROR Invalid HTTP_HOST header: '172.20.10.4'. You may need to add '172.20.10.4' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\http\request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '172.20.10.4'. You may need to add '172.20.10.4' to ALLOWED_HOSTS.
+2025-08-05 19:16:08,599 WARNING Bad Request: /trip_package/get_user_details
+2025-08-05 19:16:57,316 ERROR Invalid HTTP_HOST header: '172.20.10.4'. You may need to add '172.20.10.4' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\http\request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '172.20.10.4'. You may need to add '172.20.10.4' to ALLOWED_HOSTS.
+2025-08-05 19:16:57,352 WARNING Bad Request: /trip_package/get_user_details
+2025-08-05 19:17:06,503 INFO Starting Waitress server on http://127.0.0.1:8000
+2025-08-05 19:17:06,514 INFO Serving on http://127.0.0.1:8000
+2025-08-05 19:18:02,467 INFO Starting Waitress server on http://127.0.0.1:8000
+2025-08-05 19:18:02,479 INFO Serving on http://127.0.0.1:8000
+2025-08-05 19:19:46,884 ERROR Internal Server Error: /trip_package/get_user_details
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 275, in ensure_connection
+    self.connect()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 256, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\base.py", line 368, in get_new_connection
+    conn = Database.connect(connstr, **args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.InterfaceError: ('28000', '[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'NT AUTHORITY\\SYSTEM\'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Tour_Packages" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'NT AUTHORITY\\SYSTEM\'. (18456); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Tour_Packages" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Tour_Planners\tour_package\trip_package\views.py", line 73, in get_user_details
+    user = TripPackageUsers.objects.get(user_id=user_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\sql\compiler.py", line 1549, in execute_sql
+    sql, params = self.as_sql()
+                  ^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\compiler.py", line 226, in as_sql
+    supports_offset_clause = self.connection.sql_server_version >= 2012
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\base.py", line 468, in sql_server_version
+    with self.temporary_connection() as cursor:
+  File "C:\Program Files\Python311\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 691, in temporary_connection
+    with self.cursor() as cursor:
+         ^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 316, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\base.py", line 261, in _cursor
+    conn = super()._cursor()
+           ^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 292, in _cursor
+    self.ensure_connection()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 274, in ensure_connection
+    with self.wrap_database_errors:
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 275, in ensure_connection
+    self.connect()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 256, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\base.py", line 368, in get_new_connection
+    conn = Database.connect(connstr, **args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.InterfaceError: ('28000', '[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'NT AUTHORITY\\SYSTEM\'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Tour_Packages" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'NT AUTHORITY\\SYSTEM\'. (18456); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Tour_Packages" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0)')
+2025-08-05 19:20:10,108 ERROR Internal Server Error: /trip_package/get_user_details
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 275, in ensure_connection
+    self.connect()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 256, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\base.py", line 368, in get_new_connection
+    conn = Database.connect(connstr, **args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.InterfaceError: ('28000', '[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'NT AUTHORITY\\SYSTEM\'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Tour_Packages" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'NT AUTHORITY\\SYSTEM\'. (18456); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Tour_Packages" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Tour_Planners\tour_package\trip_package\views.py", line 73, in get_user_details
+    user = TripPackageUsers.objects.get(user_id=user_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\sql\compiler.py", line 1549, in execute_sql
+    sql, params = self.as_sql()
+                  ^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\compiler.py", line 226, in as_sql
+    supports_offset_clause = self.connection.sql_server_version >= 2012
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\base.py", line 468, in sql_server_version
+    with self.temporary_connection() as cursor:
+  File "C:\Program Files\Python311\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 691, in temporary_connection
+    with self.cursor() as cursor:
+         ^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 316, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\base.py", line 261, in _cursor
+    conn = super()._cursor()
+           ^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 292, in _cursor
+    self.ensure_connection()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 274, in ensure_connection
+    with self.wrap_database_errors:
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 275, in ensure_connection
+    self.connect()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 256, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\base.py", line 368, in get_new_connection
+    conn = Database.connect(connstr, **args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.InterfaceError: ('28000', '[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'NT AUTHORITY\\SYSTEM\'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Tour_Packages" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'NT AUTHORITY\\SYSTEM\'. (18456); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Tour_Packages" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0)')
+2025-08-05 19:20:26,652 ERROR Internal Server Error: /trip_package/get_user_details
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 275, in ensure_connection
+    self.connect()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 256, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\base.py", line 368, in get_new_connection
+    conn = Database.connect(connstr, **args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.InterfaceError: ('28000', '[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'NT AUTHORITY\\SYSTEM\'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Tour_Packages" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'NT AUTHORITY\\SYSTEM\'. (18456); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Tour_Packages" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Tour_Planners\tour_package\trip_package\views.py", line 73, in get_user_details
+    user = TripPackageUsers.objects.get(user_id=user_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\sql\compiler.py", line 1549, in execute_sql
+    sql, params = self.as_sql()
+                  ^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\compiler.py", line 226, in as_sql
+    supports_offset_clause = self.connection.sql_server_version >= 2012
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\base.py", line 468, in sql_server_version
+    with self.temporary_connection() as cursor:
+  File "C:\Program Files\Python311\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 691, in temporary_connection
+    with self.cursor() as cursor:
+         ^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 316, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\base.py", line 261, in _cursor
+    conn = super()._cursor()
+           ^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 292, in _cursor
+    self.ensure_connection()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 274, in ensure_connection
+    with self.wrap_database_errors:
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 275, in ensure_connection
+    self.connect()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 256, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\base.py", line 368, in get_new_connection
+    conn = Database.connect(connstr, **args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.InterfaceError: ('28000', '[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'NT AUTHORITY\\SYSTEM\'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Tour_Packages" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'NT AUTHORITY\\SYSTEM\'. (18456); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Tour_Packages" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0)')
+2025-08-05 19:20:42,051 ERROR Internal Server Error: /trip_package/get_user_details
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 275, in ensure_connection
+    self.connect()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 256, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\base.py", line 368, in get_new_connection
+    conn = Database.connect(connstr, **args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.InterfaceError: ('28000', '[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'NT AUTHORITY\\SYSTEM\'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Tour_Packages" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'NT AUTHORITY\\SYSTEM\'. (18456); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Tour_Packages" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Tour_Planners\tour_package\trip_package\views.py", line 73, in get_user_details
+    user = TripPackageUsers.objects.get(user_id=user_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\sql\compiler.py", line 1549, in execute_sql
+    sql, params = self.as_sql()
+                  ^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\compiler.py", line 226, in as_sql
+    supports_offset_clause = self.connection.sql_server_version >= 2012
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\base.py", line 468, in sql_server_version
+    with self.temporary_connection() as cursor:
+  File "C:\Program Files\Python311\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 691, in temporary_connection
+    with self.cursor() as cursor:
+         ^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 316, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\base.py", line 261, in _cursor
+    conn = super()._cursor()
+           ^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 292, in _cursor
+    self.ensure_connection()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 274, in ensure_connection
+    with self.wrap_database_errors:
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 275, in ensure_connection
+    self.connect()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 256, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\base.py", line 368, in get_new_connection
+    conn = Database.connect(connstr, **args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.InterfaceError: ('28000', '[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'NT AUTHORITY\\SYSTEM\'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Tour_Packages" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'NT AUTHORITY\\SYSTEM\'. (18456); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Tour_Packages" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0)')
+2025-08-05 19:26:34,317 INFO Starting Waitress server on http://127.0.0.1:8000
+2025-08-05 19:26:34,328 INFO Serving on http://127.0.0.1:8000
+2025-08-05 19:26:37,839 ERROR Internal Server Error: /trip_package/login_user
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 275, in ensure_connection
+    self.connect()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 256, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\base.py", line 368, in get_new_connection
+    conn = Database.connect(connstr, **args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.InterfaceError: ('28000', '[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'NT AUTHORITY\\SYSTEM\'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Tour_Packages" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'NT AUTHORITY\\SYSTEM\'. (18456); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Tour_Packages" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Tour_Planners\tour_package\trip_package\views.py", line 51, in login_user
+    user = TripPackageUsers.objects.get(email=email)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\sql\compiler.py", line 1549, in execute_sql
+    sql, params = self.as_sql()
+                  ^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\compiler.py", line 226, in as_sql
+    supports_offset_clause = self.connection.sql_server_version >= 2012
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\base.py", line 468, in sql_server_version
+    with self.temporary_connection() as cursor:
+  File "C:\Program Files\Python311\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 691, in temporary_connection
+    with self.cursor() as cursor:
+         ^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 316, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\base.py", line 261, in _cursor
+    conn = super()._cursor()
+           ^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 292, in _cursor
+    self.ensure_connection()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 274, in ensure_connection
+    with self.wrap_database_errors:
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 275, in ensure_connection
+    self.connect()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 256, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\base.py", line 368, in get_new_connection
+    conn = Database.connect(connstr, **args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.InterfaceError: ('28000', '[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'NT AUTHORITY\\SYSTEM\'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Tour_Packages" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'NT AUTHORITY\\SYSTEM\'. (18456); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Tour_Packages" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0)')
+2025-08-05 19:27:08,057 INFO Starting Waitress server on http://127.0.0.1:8000
+2025-08-05 19:27:08,067 INFO Serving on http://127.0.0.1:8000
+2025-08-05 19:27:21,471 WARNING Task queue depth is 1
+2025-08-05 19:31:01,065 INFO Starting Waitress server on http://127.0.0.1:8000
+2025-08-05 19:31:01,080 INFO Serving on http://127.0.0.1:8000
+2025-08-05 19:32:33,756 INFO Starting Waitress server on http://127.0.0.1:8000
+2025-08-05 19:32:33,768 INFO Serving on http://127.0.0.1:8000
+2025-08-05 19:33:41,214 WARNING Not Found: /
+2025-08-05 19:33:41,852 WARNING Not Found: /favicon.ico
+2025-08-05 19:34:35,784 INFO Starting Waitress server on http://127.0.0.1:8000
+2025-08-05 19:34:35,796 INFO Serving on http://127.0.0.1:8000
+2025-08-05 19:34:40,752 WARNING Task queue depth is 1
+2025-08-05 19:34:54,658 WARNING Task queue depth is 2
+2025-08-05 19:35:13,598 WARNING Task queue depth is 3
+2025-08-05 19:35:15,717 ERROR Internal Server Error: /trip_package/get_user_details
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 275, in ensure_connection
+    self.connect()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 256, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\base.py", line 368, in get_new_connection
+    conn = Database.connect(connstr, **args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.InterfaceError: ('28000', '[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'NT AUTHORITY\\SYSTEM\'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Tour_Packages" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'NT AUTHORITY\\SYSTEM\'. (18456); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Tour_Packages" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Tour_Planners\tour_package\trip_package\views.py", line 73, in get_user_details
+    user = TripPackageUsers.objects.get(user_id=user_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\sql\compiler.py", line 1549, in execute_sql
+    sql, params = self.as_sql()
+                  ^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\compiler.py", line 226, in as_sql
+    supports_offset_clause = self.connection.sql_server_version >= 2012
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\base.py", line 468, in sql_server_version
+    with self.temporary_connection() as cursor:
+  File "C:\Program Files\Python311\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 691, in temporary_connection
+    with self.cursor() as cursor:
+         ^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 316, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\base.py", line 261, in _cursor
+    conn = super()._cursor()
+           ^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 292, in _cursor
+    self.ensure_connection()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 274, in ensure_connection
+    with self.wrap_database_errors:
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 275, in ensure_connection
+    self.connect()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 256, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\base.py", line 368, in get_new_connection
+    conn = Database.connect(connstr, **args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.InterfaceError: ('28000', '[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'NT AUTHORITY\\SYSTEM\'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Tour_Packages" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'NT AUTHORITY\\SYSTEM\'. (18456); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Tour_Packages" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0)')
+2025-08-05 19:35:31,501 WARNING Task queue depth is 3
+2025-08-05 19:35:39,833 WARNING Task queue depth is 4
+2025-08-05 19:36:04,801 ERROR Internal Server Error: /trip_package/get_user_details
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 275, in ensure_connection
+    self.connect()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 256, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\base.py", line 368, in get_new_connection
+    conn = Database.connect(connstr, **args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.InterfaceError: ('28000', '[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'NT AUTHORITY\\SYSTEM\'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Tour_Packages" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'NT AUTHORITY\\SYSTEM\'. (18456); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Tour_Packages" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Tour_Planners\tour_package\trip_package\views.py", line 73, in get_user_details
+    user = TripPackageUsers.objects.get(user_id=user_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\sql\compiler.py", line 1549, in execute_sql
+    sql, params = self.as_sql()
+                  ^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\compiler.py", line 226, in as_sql
+    supports_offset_clause = self.connection.sql_server_version >= 2012
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\base.py", line 468, in sql_server_version
+    with self.temporary_connection() as cursor:
+  File "C:\Program Files\Python311\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 691, in temporary_connection
+    with self.cursor() as cursor:
+         ^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 316, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\base.py", line 261, in _cursor
+    conn = super()._cursor()
+           ^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 292, in _cursor
+    self.ensure_connection()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 274, in ensure_connection
+    with self.wrap_database_errors:
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 275, in ensure_connection
+    self.connect()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 256, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\base.py", line 368, in get_new_connection
+    conn = Database.connect(connstr, **args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.InterfaceError: ('28000', '[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'NT AUTHORITY\\SYSTEM\'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Tour_Packages" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'NT AUTHORITY\\SYSTEM\'. (18456); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Tour_Packages" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0)')
+2025-08-05 19:36:14,770 WARNING Task queue depth is 4
+2025-08-05 19:36:28,169 ERROR Internal Server Error: /trip_package/get_user_details
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 275, in ensure_connection
+    self.connect()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 256, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\base.py", line 368, in get_new_connection
+    conn = Database.connect(connstr, **args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.InterfaceError: ('28000', '[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'NT AUTHORITY\\SYSTEM\'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Tour_Packages" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'NT AUTHORITY\\SYSTEM\'. (18456); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Tour_Packages" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Tour_Planners\tour_package\trip_package\views.py", line 73, in get_user_details
+    user = TripPackageUsers.objects.get(user_id=user_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\sql\compiler.py", line 1549, in execute_sql
+    sql, params = self.as_sql()
+                  ^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\compiler.py", line 226, in as_sql
+    supports_offset_clause = self.connection.sql_server_version >= 2012
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\base.py", line 468, in sql_server_version
+    with self.temporary_connection() as cursor:
+  File "C:\Program Files\Python311\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 691, in temporary_connection
+    with self.cursor() as cursor:
+         ^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 316, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\base.py", line 261, in _cursor
+    conn = super()._cursor()
+           ^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 292, in _cursor
+    self.ensure_connection()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 274, in ensure_connection
+    with self.wrap_database_errors:
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 275, in ensure_connection
+    self.connect()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 256, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\base.py", line 368, in get_new_connection
+    conn = Database.connect(connstr, **args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.InterfaceError: ('28000', '[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'NT AUTHORITY\\SYSTEM\'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Tour_Packages" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'NT AUTHORITY\\SYSTEM\'. (18456); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Tour_Packages" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0)')
+2025-08-05 19:36:59,804 ERROR Internal Server Error: /trip_package/get_user_details
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 275, in ensure_connection
+    self.connect()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 256, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\base.py", line 368, in get_new_connection
+    conn = Database.connect(connstr, **args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.InterfaceError: ('28000', '[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'NT AUTHORITY\\SYSTEM\'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Tour_Packages" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'NT AUTHORITY\\SYSTEM\'. (18456); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Tour_Packages" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Tour_Planners\tour_package\trip_package\views.py", line 73, in get_user_details
+    user = TripPackageUsers.objects.get(user_id=user_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\sql\compiler.py", line 1549, in execute_sql
+    sql, params = self.as_sql()
+                  ^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\compiler.py", line 226, in as_sql
+    supports_offset_clause = self.connection.sql_server_version >= 2012
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\base.py", line 468, in sql_server_version
+    with self.temporary_connection() as cursor:
+  File "C:\Program Files\Python311\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 691, in temporary_connection
+    with self.cursor() as cursor:
+         ^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 316, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\base.py", line 261, in _cursor
+    conn = super()._cursor()
+           ^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 292, in _cursor
+    self.ensure_connection()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 274, in ensure_connection
+    with self.wrap_database_errors:
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 275, in ensure_connection
+    self.connect()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 256, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\base.py", line 368, in get_new_connection
+    conn = Database.connect(connstr, **args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.InterfaceError: ('28000', '[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'NT AUTHORITY\\SYSTEM\'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Tour_Packages" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'NT AUTHORITY\\SYSTEM\'. (18456); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Tour_Packages" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0)')
+2025-08-05 19:37:31,184 INFO Starting Waitress server on http://127.0.0.1:8000
+2025-08-05 19:37:31,195 INFO Serving on http://127.0.0.1:8000
+2025-08-05 19:37:31,739 WARNING Not Found: /
+2025-08-05 19:37:31,851 WARNING Not Found: /favicon.ico
+2025-08-05 19:38:22,183 WARNING Method Not Allowed: /trip_package/login_user
+2025-08-05 19:47:45,144 ERROR Invalid HTTP_HOST header: '172.20.10.4'. You may need to add '172.20.10.4' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\http\request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '172.20.10.4'. You may need to add '172.20.10.4' to ALLOWED_HOSTS.
+2025-08-05 19:47:45,208 WARNING Bad Request: /trip_package/get_user_details
+2025-08-05 19:48:13,420 INFO Starting Waitress server on http://127.0.0.1:8000
+2025-08-05 19:48:13,432 INFO Serving on http://127.0.0.1:8000
+2025-08-05 19:48:16,275 ERROR Invalid HTTP_HOST header: '172.20.10.4'. You may need to add '172.20.10.4' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\http\request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '172.20.10.4'. You may need to add '172.20.10.4' to ALLOWED_HOSTS.
+2025-08-05 19:48:16,854 WARNING Bad Request: /trip_package/get_user_details
+2025-08-05 19:49:07,474 INFO Starting Waitress server on http://127.0.0.1:8000
+2025-08-05 19:49:07,486 INFO Serving on http://127.0.0.1:8000
+2025-08-05 20:14:47,732 WARNING Not Found: /auth/
+2025-08-06 12:20:04,212 ERROR Internal Server Error: /trip_package/filter_package
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\connection.py", line 494, in request
+    self.endheaders()
+  File "C:\Program Files\Python311\Lib\http\client.py", line 1277, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Program Files\Python311\Lib\http\client.py", line 1037, in _send_output
+    self.send(msg)
+  File "C:\Program Files\Python311\Lib\http\client.py", line 975, in send
+    self.connect()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\connection.py", line 325, in connect
+    self.sock = self._new_conn()
+                ^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x00000169C38B1F90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=8080): Max retries exceeded with url: /flights/search (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000169C38B1F90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Tour_Planners\tour_package\trip_package\views.py", line 422, in filter_package
+    head_count = request.data.get('head_count')
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Tour_Planners\tour_package\trip_package\views.py", line 142, in external_start_flight
+    "seats_required" : head_count,
+                 ^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Tour_Planners\tour_package\trip_package\views.py", line 12, in call_flight_service
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=8080): Max retries exceeded with url: /flights/search (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000169C38B1F90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-08-06 12:21:20,123 INFO Starting Waitress server on http://127.0.0.1:8000
+2025-08-06 12:21:20,136 INFO Serving on http://127.0.0.1:8000
+2025-08-06 12:21:49,700 ERROR Internal Server Error: /trip_package/filter_package
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\connection.py", line 207, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x00000127D6509550>, 'Connection to 192.168.161.64 timed out. (connect timeout=None)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='192.168.161.64', port=443): Max retries exceeded with url: /flights/search (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000127D6509550>, 'Connection to 192.168.161.64 timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Tour_Planners\tour_package\trip_package\views.py", line 425, in filter_package
+    matching_package = external_start_flight(budget,start_date,starting_place,head_count)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Tour_Planners\tour_package\trip_package\views.py", line 145, in external_start_flight
+    flight_options = call_flight_service(start,f"{url}/flights/search")
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Tour_Planners\tour_package\trip_package\views.py", line 14, in call_flight_service
+    response = requests.post(api_url, json=content, cert=("D:/SEM-9/SOA Lab/Tour_Packages/Tour_Planners/tour_package/ssl/django.crt", "D:/SEM-9/SOA Lab/Tour_Packages/Tour_Planners/tour_package/ssl/django.key"), verify="D:/SEM-9/SOA Lab/Tour_Packages/Tour_Planners/tour_package/ssl/ca.crt")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\requests\adapters.py", line 688, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='192.168.161.64', port=443): Max retries exceeded with url: /flights/search (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000127D6509550>, 'Connection to 192.168.161.64 timed out. (connect timeout=None)'))
+2025-08-06 12:37:08,312 INFO Starting Waitress server on http://127.0.0.1:8000
+2025-08-06 12:37:08,322 INFO Serving on http://127.0.0.1:8000
+2025-08-06 12:39:22,264 INFO Starting Waitress server on http://127.0.0.1:8000
+2025-08-06 12:39:22,276 INFO Serving on http://127.0.0.1:8000
+2025-08-06 14:25:25,377 INFO Starting Waitress server on http://127.0.0.1:8000
+2025-08-06 14:25:25,389 INFO Serving on http://127.0.0.1:8000
+2025-08-06 14:28:58,766 INFO Starting Waitress server on http://127.0.0.1:8000
+2025-08-06 14:28:58,777 INFO Serving on http://127.0.0.1:8000
+2025-08-06 15:33:18,858 INFO Starting Waitress server on http://127.0.0.1:8000
+2025-08-06 15:33:18,873 INFO Serving on http://127.0.0.1:8000
+2025-08-06 15:44:50,568 ERROR Invalid HTTP_HOST header: '192.168.160.149'. You may need to add '192.168.160.149' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\http\request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.160.149'. You may need to add '192.168.160.149' to ALLOWED_HOSTS.
+2025-08-06 15:44:51,821 WARNING Bad Request: /trip_package/login_user
+2025-08-06 15:47:27,530 INFO Starting Waitress server on http://127.0.0.1:8000
+2025-08-06 15:47:27,544 INFO Serving on http://127.0.0.1:8000
+2025-08-06 15:47:39,621 ERROR Invalid HTTP_HOST header: '192.168.160.149'. You may need to add '192.168.160.149' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\http\request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.160.149'. You may need to add '192.168.160.149' to ALLOWED_HOSTS.
+2025-08-06 15:47:39,648 WARNING Bad Request: /trip_package/login_user
+2025-08-06 15:48:13,903 ERROR Invalid HTTP_HOST header: '192.168.160.149'. You may need to add '192.168.160.149' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\http\request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.160.149'. You may need to add '192.168.160.149' to ALLOWED_HOSTS.
+2025-08-06 15:48:13,953 WARNING Bad Request: /trip_package/login_user
+2025-08-06 15:49:10,751 WARNING Bad Request: /trip_package/generate_flight_plan
+2025-08-06 15:51:37,688 ERROR Internal Server Error: /trip_package/get_user_details
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 275, in ensure_connection
+    self.connect()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 256, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\base.py", line 368, in get_new_connection
+    conn = Database.connect(connstr, **args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.InterfaceError: ('28000', '[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'NT AUTHORITY\\SYSTEM\'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Tour_Packages" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'NT AUTHORITY\\SYSTEM\'. (18456); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Tour_Packages" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Tour_Planners\tour_package\trip_package\views.py", line 76, in get_user_details
+    user = TripPackageUsers.objects.get(user_id=user_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\sql\compiler.py", line 1549, in execute_sql
+    sql, params = self.as_sql()
+                  ^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\compiler.py", line 226, in as_sql
+    supports_offset_clause = self.connection.sql_server_version >= 2012
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\base.py", line 468, in sql_server_version
+    with self.temporary_connection() as cursor:
+  File "C:\Program Files\Python311\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 691, in temporary_connection
+    with self.cursor() as cursor:
+         ^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 316, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\base.py", line 261, in _cursor
+    conn = super()._cursor()
+           ^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 292, in _cursor
+    self.ensure_connection()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 274, in ensure_connection
+    with self.wrap_database_errors:
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 275, in ensure_connection
+    self.connect()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 256, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\base.py", line 368, in get_new_connection
+    conn = Database.connect(connstr, **args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.InterfaceError: ('28000', '[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'NT AUTHORITY\\SYSTEM\'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Tour_Packages" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'NT AUTHORITY\\SYSTEM\'. (18456); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Tour_Packages" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0)')
+2025-08-06 15:53:01,160 ERROR Internal Server Error: /trip_package/get_user_details
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 275, in ensure_connection
+    self.connect()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 256, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\base.py", line 368, in get_new_connection
+    conn = Database.connect(connstr, **args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.InterfaceError: ('28000', '[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'NT AUTHORITY\\SYSTEM\'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Tour_Packages" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'NT AUTHORITY\\SYSTEM\'. (18456); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Tour_Packages" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Tour_Planners\tour_package\trip_package\views.py", line 76, in get_user_details
+    user = TripPackageUsers.objects.get(user_id=user_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\models\sql\compiler.py", line 1549, in execute_sql
+    sql, params = self.as_sql()
+                  ^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\compiler.py", line 226, in as_sql
+    supports_offset_clause = self.connection.sql_server_version >= 2012
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\base.py", line 468, in sql_server_version
+    with self.temporary_connection() as cursor:
+  File "C:\Program Files\Python311\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 691, in temporary_connection
+    with self.cursor() as cursor:
+         ^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 316, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\base.py", line 261, in _cursor
+    conn = super()._cursor()
+           ^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 292, in _cursor
+    self.ensure_connection()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 274, in ensure_connection
+    with self.wrap_database_errors:
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 275, in ensure_connection
+    self.connect()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\db\backends\base\base.py", line 256, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\mssql\base.py", line 368, in get_new_connection
+    conn = Database.connect(connstr, **args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.InterfaceError: ('28000', '[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'NT AUTHORITY\\SYSTEM\'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Tour_Packages" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'NT AUTHORITY\\SYSTEM\'. (18456); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Tour_Packages" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0)')
+2025-08-06 16:05:39,336 ERROR Invalid HTTP_HOST header: '192.168.160.149'. You may need to add '192.168.160.149' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\http\request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.160.149'. You may need to add '192.168.160.149' to ALLOWED_HOSTS.
+2025-08-06 16:05:39,871 WARNING Bad Request: /trip_package/login_user
+2025-08-06 16:06:52,636 INFO Starting Waitress server on http://127.0.0.1:8000
+2025-08-06 16:06:52,643 INFO Serving on http://127.0.0.1:8000
+2025-08-06 16:07:33,242 ERROR Internal Server Error: /trip_package/filter_package
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\util\ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\util\ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\ssl.py", line 1075, in _create
+    self.do_handshake()
+  File "C:\Program Files\Python311\Lib\ssl.py", line 1346, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: IP address mismatch, certificate is not valid for '192.168.161.64'. (_ssl.c:992)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: IP address mismatch, certificate is not valid for '192.168.161.64'. (_ssl.c:992)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='192.168.161.64', port=443): Max retries exceeded with url: /flights/search (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: IP address mismatch, certificate is not valid for '192.168.161.64'. (_ssl.c:992)")))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Tour_Planners\tour_package\trip_package\views.py", line 425, in filter_package
+    matching_package = external_start_flight(budget,start_date,starting_place,head_count)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Tour_Planners\tour_package\trip_package\views.py", line 145, in external_start_flight
+    flight_options = call_flight_service(start,f"{url}/flights/search")
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Tour_Planners\tour_package\trip_package\views.py", line 14, in call_flight_service
+    response = requests.post(api_url, json=content, cert=("D:/SEM-9/SOA Lab/Tour_Packages/Tour_Planners/tour_package/ssl/django.crt", "D:/SEM-9/SOA Lab/Tour_Packages/Tour_Planners/tour_package/ssl/django.key"), verify="D:/SEM-9/SOA Lab/Tour_Packages/Tour_Planners/tour_package/ssl/ca.crt")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\requests\adapters.py", line 698, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='192.168.161.64', port=443): Max retries exceeded with url: /flights/search (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: IP address mismatch, certificate is not valid for '192.168.161.64'. (_ssl.c:992)")))
+2025-08-06 16:10:35,868 ERROR Internal Server Error: /trip_package/filter_package
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\util\ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\util\ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\ssl.py", line 1075, in _create
+    self.do_handshake()
+  File "C:\Program Files\Python311\Lib\ssl.py", line 1346, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: IP address mismatch, certificate is not valid for '192.168.161.64'. (_ssl.c:992)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: IP address mismatch, certificate is not valid for '192.168.161.64'. (_ssl.c:992)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='192.168.161.64', port=443): Max retries exceeded with url: /flights/search (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: IP address mismatch, certificate is not valid for '192.168.161.64'. (_ssl.c:992)")))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Tour_Planners\tour_package\trip_package\views.py", line 425, in filter_package
+    matching_package = external_start_flight(budget,start_date,starting_place,head_count)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Tour_Planners\tour_package\trip_package\views.py", line 145, in external_start_flight
+    flight_options = call_flight_service(start,f"{url}/flights/search")
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Tour_Planners\tour_package\trip_package\views.py", line 14, in call_flight_service
+    response = requests.post(api_url, json=content, cert=("D:/SEM-9/SOA Lab/Tour_Packages/Tour_Planners/tour_package/ssl/django.crt", "D:/SEM-9/SOA Lab/Tour_Packages/Tour_Planners/tour_package/ssl/django.key"), verify="D:/SEM-9/SOA Lab/Tour_Packages/Tour_Planners/tour_package/ssl/ca.crt")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\requests\adapters.py", line 698, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='192.168.161.64', port=443): Max retries exceeded with url: /flights/search (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: IP address mismatch, certificate is not valid for '192.168.161.64'. (_ssl.c:992)")))
+2025-08-06 16:11:14,089 INFO Starting Waitress server on http://127.0.0.1:8000
+2025-08-06 16:11:14,097 INFO Serving on http://127.0.0.1:8000
+2025-08-06 16:11:22,092 ERROR Internal Server Error: /trip_package/filter_package
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\util\ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\util\ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\ssl.py", line 1075, in _create
+    self.do_handshake()
+  File "C:\Program Files\Python311\Lib\ssl.py", line 1346, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: IP address mismatch, certificate is not valid for '192.168.161.64'. (_ssl.c:992)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: IP address mismatch, certificate is not valid for '192.168.161.64'. (_ssl.c:992)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='192.168.161.64', port=443): Max retries exceeded with url: /flights/search (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: IP address mismatch, certificate is not valid for '192.168.161.64'. (_ssl.c:992)")))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Tour_Planners\tour_package\trip_package\views.py", line 425, in filter_package
+    matching_package = external_start_flight(budget,start_date,starting_place,head_count)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Tour_Planners\tour_package\trip_package\views.py", line 145, in external_start_flight
+    flight_options = call_flight_service(start,f"{url}/flights/search")
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Tour_Planners\tour_package\trip_package\views.py", line 14, in call_flight_service
+    response = requests.post(api_url, json=content, cert=("D:/SEM-9/SOA Lab/Tour_Packages/Tour_Planners/tour_package/ssl/django.crt", "D:/SEM-9/SOA Lab/Tour_Packages/Tour_Planners/tour_package/ssl/django.key"), verify="D:/SEM-9/SOA Lab/Tour_Packages/Tour_Planners/tour_package/ssl/ca.crt")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SEM-9\SOA Lab\Tour_Packages\Environment\Lib\site-packages\requests\adapters.py", line 698, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='192.168.161.64', port=443): Max retries exceeded with url: /flights/search (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: IP address mismatch, certificate is not valid for '192.168.161.64'. (_ssl.c:992)")))
+2025-08-07 10:18:08,520 INFO Starting Waitress server on http://127.0.0.1:8000
+2025-08-07 10:18:08,539 INFO Serving on http://127.0.0.1:8000
+2025-08-07 10:47:48,985 INFO Starting Waitress server on http://127.0.0.1:8000
+2025-08-07 10:47:48,998 INFO Serving on http://127.0.0.1:8000
+2025-08-07 10:56:03,797 INFO Starting Waitress server on http://127.0.0.1:8000
+2025-08-07 10:56:03,808 INFO Serving on http://127.0.0.1:8000
+2025-08-07 11:29:05,106 INFO Starting Waitress server on http://127.0.0.1:8000
+2025-08-07 11:29:05,114 INFO Serving on http://127.0.0.1:8000
+2025-08-07 11:30:49,427 WARNING Method Not Allowed: /trip_package/end_flight_options
+2025-08-07 15:52:48,425 INFO Starting Waitress server on http://127.0.0.1:8000
+2025-08-07 15:52:48,441 INFO Serving on http://127.0.0.1:8000
+2025-08-07 15:56:37,668 WARNING Bad Request: /trip_package/start_flight_options

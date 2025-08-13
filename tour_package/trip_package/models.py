@@ -71,8 +71,11 @@ class TripPackageBookings(models.Model):
     package = models.ForeignKey(TourPackage, on_delete=models.CASCADE, db_column='package')
     user = models.ForeignKey(TripPackageUsers, on_delete=models.CASCADE, db_column='user_id')
     booking_date = models.DateTimeField(auto_now_add=True, db_column='booking_date', blank=True, null=True)
+    end_date = models.DateTimeField(blank=True, null=True, db_column='end_date')
     total_amount = models.DecimalField(max_digits=10, decimal_places=2, db_column='total_amount', blank=True, null=True)
     status = models.CharField(max_length=10, db_column='status', blank=True, null=True)
+    package_startdate = models.DateTimeField(blank=True, null=True, db_column='package_startdate')
+    source_place = models.CharField(max_length=100, db_column='source_place', blank=True, null=True)
 
     def _str_(self):
         return f"Booking {self.booking_id} - {self.user.first_name}"
@@ -89,11 +92,15 @@ class TripPackagePassengers(models.Model):
     def _str_(self):
         return self.full_name
 
-
 class BookingTickets(models.Model):
     ticket_id = models.AutoField(primary_key=True, db_column='ticket_id')
     booking = models.ForeignKey(TripPackageBookings, on_delete=models.CASCADE, db_column='booking')
     flight_booking_id = models.IntegerField(blank=True, null=True, db_column='flight_booking_id')
+    flight_status = models.CharField(max_length=10, db_column='flight_status', blank=True, null=True)
+    source_city = models.CharField(max_length=100, db_column='source_city', blank=True, null=True)
+    destination_city = models.CharField(max_length=100, db_column='destination_city', blank=True, null=True)
+    arrival_time = models.DateTimeField(blank=True, null=True, db_column='arrival_time')
+    departure_time = models.DateTimeField(blank=True, null=True, db_column='departure_time')
 
     def _str_(self):
         return f"Ticket {self.ticket_id} for Booking {self.booking.booking_id}"

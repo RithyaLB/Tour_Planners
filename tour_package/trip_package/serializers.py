@@ -35,3 +35,22 @@ class TripPackageUsers_Serializer(serializers.ModelSerializer):
     class Meta:
         model = TripPackageUsers
         exclude = ['password_hash']
+
+class PassengerSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = TripPackagePassengers
+        fields = ['passenger_id', 'full_name', 'age', 'gender', 'passport_number']
+
+class TicketSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = BookingTickets
+        fields = ['ticket_id', 'flight_booking_id']
+
+class BookingSerializer(serializers.ModelSerializer):
+    passengers = PassengerSerializer(many=True, source='trippackagepassengers_set')
+    tickets = TicketSerializer(many=True, source='bookingtickets_set')
+    package = TourPackage_Serializer(read_only=True) 
+    
+    class Meta:
+        model = TripPackageBookings
+        fields = '__all__'

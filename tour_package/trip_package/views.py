@@ -7,11 +7,42 @@ from datetime import datetime,timedelta
 from django.forms.models import model_to_dict
 from django.contrib.auth.hashers import make_password, check_password
 import requests
+import ssl
+import hashlib
+from django.utils import timezone
+
+
+#url = "https://192.168.161.64:443"
+url = "http://localhost:8080"
+
+def get_cert_fingerprint(cert_path: str) -> str:
+    with open(cert_path, "rb") as f:
+        cert_pem = f.read()
+    cert_der = ssl.PEM_cert_to_DER_cert(cert_pem.decode())
+    fingerprint = hashlib.sha1(cert_der).hexdigest().lower()
+    return fingerprint
 
 def call_flight_service(content, api_url):
-    response = requests.post(api_url, json=content)
-    response.raise_for_status()  
-    return list(response.json())
+    cert_path = "D:/SEM-9/SOA Lab/Tour_Packages/Tour_Planners/tour_package/ssl/django.crt"
+    key_path = "D:/SEM-9/SOA Lab/Tour_Packages/Tour_Planners/tour_package/ssl/django.key"
+    
+    fingerprint = get_cert_fingerprint(cert_path)
+    
+    headers = {
+        "x-client-cert-fingerprint": fingerprint
+    }
+
+    response = requests.post(
+        api_url,
+        json=content,
+        cert=(cert_path, key_path),
+        headers=headers,
+        verify=False  # Use your CA file in production
+    )
+
+    print('Kishore API Called: ', api_url)
+    response.raise_for_status()
+    return response.json()
 
 @api_view(['POST'])
 def register_user(request):
@@ -138,7 +169,9 @@ def external_start_flight(budget,start_date,starting_place,head_count):
                         "seats_required" : head_count,
                         "limit": 5
                     }
-                    flight_options = call_flight_service(start,"http://192.168.220.24:8080/flights/search")
+                    flight_options = call_flight_service(start,f"{url}/flights/search")
+                    print("Response from flight service: ", flight_options)
+                    
                     '''flight_options = [
                                 {
                                     "total_duration_minutes": 340,
@@ -235,7 +268,7 @@ def internal_flight(matching_package,budget,head_count,start_date):
             current_pc = package_cities[i]
             next_pc = package_cities[i + 1]
             city_start_date = current_date
-            spots = Spot.objects.filter(city=current_pc.city).order_by('-day_no','timing')
+            spots = Spot.objects.filter(city=current_pc.city).order_by('-day_no','-timing')
             if not spots.exists():
                 valid = False
                 break  
@@ -253,7 +286,7 @@ def internal_flight(matching_package,budget,head_count,start_date):
                 "seats_required": head_count,
                 "limit": 1,
             }
-            flights = call_flight_service(city_dict,"http://192.168.220.24:8080/flights/internal-search")
+            flights = call_flight_service(city_dict,f"{url}/flights/internal-search")
             '''flights = [
                     {
                         "flight_id": "FL123",
@@ -280,7 +313,7 @@ def internal_flight(matching_package,budget,head_count,start_date):
             added_price += base_price
         if valid and added_price < budget:
             last_city = package_cities[-1].city
-            last_spots = Spot.objects.filter(city=last_city).order_by('-day_no','timing')
+            last_spots = Spot.objects.filter(city=last_city).order_by('-day_no','-timing')
             if last_spots.exists():
                 last_spot = last_spots.first()
                 last_day_no = last_spot.day_no or 0
@@ -306,7 +339,7 @@ def external_end_flight(matching_package,budget,starting_place,head_count):
             "seats_required" : head_count,
             "limit": 5,
         }
-        flight_options = call_flight_service(send,"http://192.168.220.24:8080/flights/search")
+        flight_options = call_flight_service(send,f"{url}/flights/search")
         '''flight_options = [
                                 {
                                     "total_duration_minutes": 340,
@@ -448,7 +481,7 @@ def start_flight_options(request):
                     "seats_required": head_count,
                     "limit": 5
                 }
-                flight_options = call_flight_service(start,"http://192.168.220.24:8080/flights/search")
+                flight_options = call_flight_service(start,f"{url}/flights/search")
                 '''flight_options = [
                                 {
                                     "total_duration_minutes": 340,
@@ -554,7 +587,7 @@ def generate_flight_plan(request):
                 "seats_required": head_count,
                 "limit": 1
             }
-            flights = call_flight_service(city_dict,"http://192.168.220.24:8080/flights/internal-search")
+            flights = call_flight_service(city_dict,f"{url}/flights/internal-search")
             '''flights = [
                 {
                     "flight_id": "FL123",
@@ -575,7 +608,7 @@ def generate_flight_plan(request):
             if not flights:
                 return Response({"error": f"No flights from {current_pc.city.city_name} to {next_pc.city.city_name}"}, status=status.HTTP_400_BAD_REQUEST)
             arrival_time_str = flights[0].get("arrival_time")
-            last_arrival_time = datetime.strptime(arrival_time_str, "%Y-%m-%dT%H:%M:%S")
+            last_arrival_time = datetime.strptime(arrival_time_str, "%Y-%m-%d %H:%M:%S")
             current_date = last_arrival_time  
             city_dict["flight"] = flights[0]
             result.append(city_dict)
@@ -614,7 +647,7 @@ def generate_flight_plan(request):
             })
             if i < len(result):
                 arrival_time_str = result[i]['flight']['arrival_time']
-                last_arrival_time = datetime.strptime(arrival_time_str, "%Y-%m-%dT%H:%M:%S")
+                last_arrival_time = datetime.strptime(arrival_time_str, "%Y-%m-%d %H:%M:%S")
                 current_date = (last_arrival_time + timedelta(days=1)).replace(hour=0, minute=0, second=0, microsecond=0)
 
         return Response({
@@ -651,7 +684,7 @@ def end_flight_options(request):
             "seats_required": head_count,
             "limit": 5
         }
-        flight_options = call_flight_service(city_dict,"http://192.168.220.24:8080/flights/search")
+        flight_options = call_flight_service(city_dict,f"{url}/flights/search")
         '''flight_options = [
                                 {
                                     "total_duration_minutes": 340,
@@ -730,7 +763,12 @@ def create_booking(request):
         passengers = data["passengers"]
         flights = data["flights"]
         booking_date_str = data["booking_date"]
-        booking_date = datetime.strptime(booking_date_str, "%Y-%m-%d")
+        end_date_str = data["end_date"]
+        source_place = data["source_place"]
+        package_startdate_str = data["src_to_first_arrival_time"]
+        booking_date = datetime.strptime(booking_date_str, "%Y-%m-%d %H:%M")
+        end_date = datetime.strptime(end_date_str, "%Y-%m-%d %H:%M")
+        package_startdate = datetime.strptime(package_startdate_str, "%Y-%m-%dT%H:%M")
 
         package = TourPackage.objects.get(package_id=package_id)
         user = TripPackageUsers.objects.get(user_id=user_id)
@@ -739,7 +777,10 @@ def create_booking(request):
             user=user,
             total_amount=(total_amount+package.price)*head_count,
             status="confirmed",
-            booking_date=booking_date
+            booking_date=booking_date,
+            end_date=end_date,
+            package_startdate=package_startdate,
+            source_place=source_place
         )
         for p in passengers:
             TripPackagePassengers.objects.create(
@@ -756,7 +797,7 @@ def create_booking(request):
                 "seats_required": head_count,
                 "passenger_details": passengers
             }
-            flight_response = call_flight_service(flight_request,"http://192.168.220.24:8080/flights/book")
+            flight_response = call_flight_service(flight_request,f"{url}/flights/book")
             '''flight_response = {
                 "booking_id": 2,
                 "status": "confirmed",
@@ -765,11 +806,131 @@ def create_booking(request):
                 }'''
             BookingTickets.objects.create(
                     booking=booking,
-                    flight_booking_id=flight_response.get("booking_id")
+                    flight_booking_id=flight_response.get("booking_id"),
+                    source_city=flight["source_city"],
+                    destination_city=flight["destination_city"],
+                    arrival_time=datetime.strptime(flight["arrival_time"], "%Y-%m-%dT%H:%M:%S"),
+                    departure_time=datetime.strptime(flight["departure_time"], "%Y-%m-%dT%H:%M:%S")
                 )
         return Response({
             "message": "Booking and flight tickets successfully stored.",
             "booking_id": booking.booking_id
+        }, status=200)
+
+    except Exception as e:
+        return Response({"error": str(e)}, status=400)
+    
+@api_view(['POST'])
+def fetch_ticket_details(request):
+    tickets = request.data.get("tickets", [])
+    if not tickets:
+        return Response({"error": "No tickets provided"}, status=status.HTTP_400_BAD_REQUEST)
+
+    results = []
+
+    for ticket in tickets:
+        booking_id = ticket.get("flight_booking_id")
+        if booking_id:
+            api_url = f"http://localhost:8080/booking/{booking_id}"
+            try:
+                response = requests.get(api_url, timeout=10)
+                if response.status_code == 200:
+                    results.append(response.json())
+                else:
+                    results.append({"booking_id": booking_id, "error": "Failed to fetch data"})
+            except requests.RequestException as e:
+                results.append({"booking_id": booking_id, "error": str(e)})
+
+    return Response({"results": results}, status=status.HTTP_200_OK)
+
+@api_view(['GET'])
+def get_user_bookings(request, user_id):
+    bookings = TripPackageBookings.objects.filter(user_id=user_id).select_related('package').prefetch_related('trippackagepassengers_set', 'bookingtickets_set')
+    serializer = BookingSerializer(bookings, many=True)
+    return Response(serializer.data, status=status.HTTP_200_OK)
+
+@api_view(['POST'])
+def cancel_flights(request):
+    data = request.data
+    booking_ids = {p['booking_id'] for p in data.get('affected_passengers', [])} 
+    updated_count = BookingTickets.objects.filter(flight_booking_id__in=booking_ids).update(flight_status="cancelled")
+    return Response(
+        {"message": f"{updated_count} tickets updated to cancelled"},
+        status=status.HTTP_200_OK
+    )
+
+@api_view(['POST'])
+def cancel_booking(request):
+    booking_id = request.data.get("booking_id")
+    if not booking_id:
+        return Response({"error": "booking_id is required"}, status=status.HTTP_400_BAD_REQUEST)
+    try:
+        booking = TripPackageBookings.objects.get(booking_id=booking_id)
+        booking.status = "cancelled"
+        booking.save()
+        flight_ids = list(
+            BookingTickets.objects.filter(booking_id=booking_id)
+            .values_list("flight_booking_id", flat=True)
+        )
+        return Response({
+            "flight_booking_ids": flight_ids
+        }, status=status.HTTP_200_OK)
+    except TripPackageBookings.DoesNotExist:
+        return Response({"error": "Booking not found"}, status=status.HTTP_404_NOT_FOUND)
+    
+@api_view(['POST'])
+def update_booking(request):
+    try:
+        data = request.data
+        booking_id = data["booking_id"]  
+        head_count = data["head_count"]
+        passengers = data["passengers"]
+        flights = data["flights"]
+
+        booking = TripPackageBookings.objects.get(booking_id=booking_id)
+        canceled_flight_ids = []
+
+        for flight in flights:
+            existing_tickets = BookingTickets.objects.filter(
+                booking=booking,
+                source_city=flight["source_city"],
+                destination_city=flight["destination_city"]
+            )
+            create_new_ticket = False
+
+            if existing_tickets.exists():
+                for ticket in existing_tickets:
+                    if ticket.flight_status == "canceled" or \
+                       ticket.arrival_time != timezone.make_aware(datetime.strptime(flight["arrival_time"], "%Y-%m-%dT%H:%M:%S")) or \
+                       ticket.departure_time != timezone.make_aware(datetime.strptime(flight["departure_time"], "%Y-%m-%dT%H:%M:%S")):
+                        canceled_flight_ids.append(ticket.flight_booking_id)
+                        create_new_ticket = True
+            else:
+                create_new_ticket = True
+
+            if create_new_ticket:
+                flight_request = {
+                    "flight_id": flight["flight_id"],
+                    "travel_date": flight["departure_time"].split(" ")[0],
+                    "seats_required": head_count,
+                    "passenger_details": passengers
+                }
+                flight_response = call_flight_service(flight_request, f"{url}/flights/book")
+
+                BookingTickets.objects.create(
+                    booking=booking,
+                    flight_booking_id=flight_response.get("booking_id"),
+                    flight_status=flight_response.get("status", "confirmed"),
+                    source_city=flight["source_city"],
+                    destination_city=flight["destination_city"],
+                    arrival_time=timezone.make_aware(datetime.strptime(flight["arrival_time"], "%Y-%m-%dT%H:%M:%S")),
+                    departure_time=timezone.make_aware(datetime.strptime(flight["departure_time"], "%Y-%m-%dT%H:%M:%S"))
+                )
+
+        return Response({
+            "message": "Flight tickets processed successfully.",
+            "booking_id": booking.booking_id,
+            "canceled_flights": canceled_flight_ids
         }, status=200)
 
     except Exception as e:

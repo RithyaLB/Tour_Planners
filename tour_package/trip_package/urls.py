@@ -11,5 +11,10 @@ urlpatterns = [
     path('login_user', login_user, name='login_user'),
     path('get_user_details', get_user_details, name='get_user_details'),
     path('update_user_details', update_user_details, name='update_user_details'),
-    path('change_password', change_password,name='change_password')
+    path('change_password', change_password, name='change_password'),
+    path('view_bookings/<int:user_id>/', get_user_bookings, name='view_bookings'),
+    path('fetch_ticket_details', fetch_ticket_details, name='fetch_ticket_details'),
+    path('cancel_flights', cancel_flights, name='cancel_flights'),
+    path('cancel_booking', cancel_booking, name='cancel_booking'),
+    path('update_booking', update_booking, name='update_booking'),
 ]
