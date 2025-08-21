@@ -1,6 +1,8 @@
-
 import os
 from pathlib import Path
+import datetime
+from corsheaders.defaults import default_headers
+
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -13,13 +15,13 @@ ALLOWED_HOSTS = ['*']
 #ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'localhost:8000', '127.0.0.1:8000','172.20.10.6', '172.20.10.6:8000', '172.20.10.4', '172.20.10.4:8000', '192.168.160.149']
 
 # HTTPS Security Settings
-# SECURE_SSL_REDIRECT = False  # Nginx will handle HTTP to HTTPS redirect
-# SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-# SECURE_HSTS_SECONDS = 31536000  # 1 year
-# SECURE_HSTS_INCLUDE_SUBDOMAINS = True
-# SECURE_HSTS_PRELOAD = True
-# SESSION_COOKIE_SECURE = True
-# CSRF_COOKIE_SECURE = True
+SECURE_SSL_REDIRECT = False  # Nginx will handle HTTP to HTTPS redirect
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+SECURE_HSTS_SECONDS = 31536000  # 1 year
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+SECURE_HSTS_PRELOAD = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
 
 # CORS_ALLOWED_ORIGINS = [
 #     "http://localhost:3000",
@@ -31,6 +33,10 @@ ALLOWED_HOSTS = ['*']
 
 # CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOW_ALL_ORIGINS = True
+
+CORS_ALLOW_HEADERS = list(default_headers) + [
+    "X-API-KEY",
+]
 
 USE_TZ = True
 
@@ -143,3 +149,33 @@ Q_CLUSTER = {
     'orm': 'default'
 }
 
+LOGS_DIR = os.path.join(BASE_DIR, 'logs')
+os.makedirs(LOGS_DIR, exist_ok=True)  
+
+LOG_FILE_NAME = f"flight_tour_package{datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.log"
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '{asctime} [{levelname}] {message}',
+            'style': '{',
+        },
+    },
+    'handlers': {
+        'flight_cancellation_file': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'filename': os.path.join(LOGS_DIR, LOG_FILE_NAME),
+            'formatter': 'verbose',
+        },
+    },
+    'loggers': {
+        'flight_cancellation': {
+            'handlers': ['flight_cancellation_file'],
+            'level': 'INFO',
+            'propagate': False,
+        },
+    },
+}

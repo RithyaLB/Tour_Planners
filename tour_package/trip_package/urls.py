@@ -17,4 +17,7 @@ urlpatterns = [
     path('cancel_flights', cancel_flights, name='cancel_flights'),
     path('cancel_booking', cancel_booking, name='cancel_booking'),
     path('update_booking', update_booking, name='update_booking'),
+    path("proxy_check_otp", proxy_check_otp, name="proxy_check_otp"),
+    path("proxy_send_email", proxy_send_email, name="proxy_send_email"),
+    path("proxy_email_verification", proxy_email_verification, name="proxy_email_verification"),
 ]

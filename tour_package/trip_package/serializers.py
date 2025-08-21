@@ -34,7 +34,7 @@ class PackageCity_Serializer(serializers.ModelSerializer):
 class TripPackageUsers_Serializer(serializers.ModelSerializer):
     class Meta:
         model = TripPackageUsers
-        exclude = ['password_hash']
+        exclude = []
 
 class PassengerSerializer(serializers.ModelSerializer):
     class Meta:
@@ -44,7 +44,7 @@ class PassengerSerializer(serializers.ModelSerializer):
 class TicketSerializer(serializers.ModelSerializer):
     class Meta:
         model = BookingTickets
-        fields = ['ticket_id', 'flight_booking_id']
+        fields = ['ticket_id', 'flight_booking_id', 'flight_status']
 
 class BookingSerializer(serializers.ModelSerializer):
     passengers = PassengerSerializer(many=True, source='trippackagepassengers_set')

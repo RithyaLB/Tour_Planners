@@ -17,5 +17,5 @@ def update_booking_status():
         else:
             booking.status = "confirmed"  
         booking.save()
-        print(booking.id, booking.status)
+        print(booking.booking_id, booking.status)
 
