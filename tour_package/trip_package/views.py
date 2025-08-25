@@ -11,14 +11,13 @@ import requests
 import ssl
 import hashlib
 from django.utils import timezone
-from django.views.decorators.csrf import csrf_exempt
 
 logger = logging.getLogger('flight_cancellation')
 
 url = "https://192.168.161.64:443"
 #url = "http://localhost:8080"
 
-email_service_url = 'http://192.168.166.32:5000'
+email_service_url = 'http://192.168.163.197:5000'
 email_api_key = '0898c79d9edee1eaf79e1f97718ea84da47472f70884944ba1641b58ed24796c'
 
 phone_api_key = '9D941AF69FAA5E041172D29A8B459BB4'
@@ -577,7 +576,7 @@ def create_booking(request):
         package_startdate_str = data["src_to_first_arrival_time"]
         booking_date = datetime.strptime(booking_date_str, "%Y-%m-%d %H:%M")
         end_date = datetime.strptime(end_date_str, "%Y-%m-%d %H:%M")
-        package_startdate = datetime.strptime(package_startdate_str, "%Y-%m-%dT%H:%M")
+        package_startdate = datetime.strptime(package_startdate_str, "%Y-%m-%dT%H:%M:%S")
 
         package = TourPackage.objects.get(package_id=package_id)
         user = TripPackageUsers.objects.get(user_id=user_id)
